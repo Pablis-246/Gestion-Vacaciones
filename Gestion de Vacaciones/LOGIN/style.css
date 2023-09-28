@@ -1,0 +1,94 @@
+:root{
+    --aceptar-boton: rgb(146, 146, 146);
+}
+
+body{
+    margin: 0;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+}
+.container{
+    max-width: 230px;
+    position: relative;
+    margin-bottom: 140px;
+    flex: 1;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h4{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+input{
+    width: 100%;
+    padding: 4px 6px;
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2);
+}
+
+.input-dni{
+    margin-bottom: 0px;
+}
+.btn-aceptar{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+    padding: 7px 20px;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--aceptar-boton);
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: ease-in;
+}
+.btn-aceptar:hover{
+    background-color: rgb(80, 80, 80);
+    transition-delay: 0.1s;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 98.5%;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p{
+  font-size: 9px;
+}
+
+.error-message{
+  font-size: 15px;
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
