@@ -1,0 +1,331 @@
+
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Menú desplegable (hamburguesa) */
+        #menu {
+            width: 50px; /* Ancho inicial del menú */
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            left: -50px; /* Posición inicial del menú */
+            top: 0;
+            height: 100%;
+            overflow-y: auto;
+            transition: left 0.3s, width 0.3s; /* Agregar transición para el ancho */
+
+        }
+
+        #menu.show {
+            left: 0;
+            width: 220px; /* Ancho cuando se muestra el menú */
+        }
+
+        #menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #menu li {
+
+            padding: 20px 60px;
+        }
+
+        #menu a {
+
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .menuOpciones{
+          font-size: 17px;
+        }
+
+        /* Contenido principal */
+        .principal {
+            margin-left: 250px; /* Ajustar el margen para acomodar el ancho del menú */
+            padding: 20px;
+        }
+
+        /* Botón de hamburguesa */
+        #menuButton {
+            position: fixed;
+            left: 15px;
+            top: 20px;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        #menuButton .bar {
+            width: 30px;
+            height: 3px;
+            background-color: rgb(114, 107, 107);
+            margin: 6px 0;
+            transition: 0.5s;
+        }
+
+        .menuOpciones li{
+            font-size: 18px;
+            margin: 15px 5px;
+            transition: 0.3s;
+        }
+
+        .menuOpciones li:hover{
+            background-color: rgb(131, 123, 114);
+            border-radius: 40px;
+           
+        }
+
+
+img {
+    border-radius: 50px; /* Hace que la imagen sea circular */
+    width: 60px; /* Ancho de la imagen */
+    height: 60px; /* Altura de la imagen */
+
+}
+
+/* Estilos para el nombre del sitio */
+.logo {
+    justify-content: end;
+}
+
+.logo h1 {
+    font-size: 25px; /* Tamaño del texto del nombre */
+    color: rgb(236, 234, 234); /* Color del texto */
+
+}
+
+/* Estilos para el menú de navegación horizontal */
+/* Estilos para el menú de navegación horizontal */
+nav {
+    border-bottom: 2px solid #333; /* Línea horizontal debajo del menú */
+    color: #333;
+    text-align: center; /* Centra los elementos horizontalmente */
+}
+
+.menu2 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Hace que los elementos del menú estén en línea */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.menu2 li {
+    margin: 0 60px; /* Agrega espacio horizontal entre elementos */
+}
+
+.menu2 a {
+    text-decoration: none;
+    color: #333; /* Color del texto del enlace */
+    padding: 10px 10px; /* Espacio alrededor del texto del enlace */
+    display: block; /* Hace que el enlace ocupe todo el ancho del contenedor */
+    font-size:20px;
+    transition: 0.5s;
+
+}
+
+.menu2 .cerrarSesion a:hover {
+    background-color: #555; /* Cambia el color de fondo al pasar el cursor */
+    color: #fff; /* Cambia el color del texto al pasar el cursor */
+    border-radius: 15px;
+}
+
+
+/* Estilos para el footer */
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    flex-direction: column; /* Apila los elementos verticalmente */
+}
+
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px; /* Ajusta el tamaño de fuente según tus necesidades */
+    padding:20px;
+}
+
+.app-container{
+    max-width: 700px;
+    max-height: 1050px;
+    display: flex;
+  }
+  
+  .content{
+    width: 1000px;
+    height: 100px;
+  }
+  
+ 
+  
+  .solicitud-box{
+    display: flex;
+    align-items: center;
+  }
+  .solicitud-box i{
+    margin-right: 12px;
+  }
+  
+  .estado-box{
+    display: flex;
+    align-items: center;
+  }
+  .estado-box i{
+    margin-right: 12px;
+  }
+  
+  .linea{
+    height: .2px;
+    border: rgb(187, 187, 187) 1px solid;
+    border-radius: 1px;
+    width: 100%;
+  }
+  
+  .btn-container-2{
+    position: absolute; 
+    bottom: 0; 
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .solicitud-btn-a{
+    margin-right: 20px;
+    padding: 6px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.1);
+  }
+  .solicitud-btn-a:hover{
+    background-color: green;
+  }
+
+  .solicitud-btn-r{
+    margin-right: 20px;
+    padding: 6px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.1);
+  }
+  
+  .solicitud-btn-r:hover{
+    background-color: red;
+  }
+  
+  
+  .btn-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .selector-button{
+    margin-right: 20px;
+    padding: 8px 70px;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight:500;
+    cursor: pointer;
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.1s ease;
+  }
+  
+  .selector-button:hover{
+    background-color: rgb(184, 182, 182);
+  
+  }
+  
+  .selector-button:active{
+    background-color: rgb(231, 231, 231);
+  }
+  
+  .solicitud-container{
+    width: 1000px;
+    height: 250px;
+    overflow-y: auto;
+    padding: 10px;
+
+  }
+  
+  .nueva-solicitud{
+      margin-top: 46px;
+      margin-left: 100px;
+      position: relative;
+      width: 550px;
+      max-height: 150px;
+      padding: 20px;
+      color: #000;
+      background-color: #dedede;
+      height: 200px;
+      align-items: center;
+      border-radius: 10px;    
+      box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.1);
+  }
+
+  .alert {
+    display: none;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.success-alert {
+    background-color: green;
+    color: white;
+}
+
+.error-alert {
+    background-color: red;
+    color: white;
+}
+
+.alert-container {
+    position: absolute;
+    top: 20px; /* Ajusta la posición vertical según sea necesario */
+    text-align: center;
+}
